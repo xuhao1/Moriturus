@@ -31,3 +31,8 @@ Shift+Enter会有多余回车
 有可能会出现僵尸进程
 
 语法高亮和自动缩进尚未实现
+
+##Moriturus te saluto.
+Moriturus一词在mit-scheme关闭时候看到,意味将死之物。
+
+在这个IDE越做越花哨的年代，我们就当缅怀下各种Moriturus状态下，连方向键都打不进去的交互解释器吧！
