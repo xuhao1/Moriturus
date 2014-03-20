@@ -17,13 +17,9 @@ app.get('/css/*', function (req, res)
 });
 
 io.sockets.on('connection', function (socket) {
-    socket.emit('news', { hello: 'world' });
     socket.on('message',function (msg){
         console.log(msg);
         heart.processMessage(msg,socket);
     });
-    socket.on('anotherNews', function (data) {
-    console.log(data);
-  });
 });
 server.listen(8080);
