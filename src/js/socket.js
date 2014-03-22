@@ -22,12 +22,8 @@ function connect()
                 console.log(mesjson['task']);
                 if($("#entrydis"+entrynow).length==0)
                 {
-                    $("#sample").append("<p>out["+entrynow+"]=</p>");
-                   $("#sample").append("<pre><code id='entrydis"+entrynow+"'></code></pre>");
-                   var apphtml="<p> In["+(entrynow+1)+"]=</p>";
-                    apphtml+="<textarea rows='1' class='form-control' rows='2' onkeypress='return run(event,"
-                    +entrynow+")'  id='entryinput"+entrynow+"'></textarea>";
-                    $("#sample").append(apphtml);
+                    $("#sample").append(outputEntry(entrynow));
+                    $("#sample").append(inputEntry(entrynow));
                 }
                 $("#entrydis"+entrynow).text($("#entrydis"+entrynow).text()+mesjson['mes']);
             }

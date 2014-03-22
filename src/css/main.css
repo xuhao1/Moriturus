@@ -4,3 +4,21 @@
     top:2em;
     left:10%;
 }
+.input{
+    width:100%;
+}
+.output{
+    width:100%;
+    position: relative;
+    top:2em;
+}
+.inputarea{
+    position: relative;
+    top:1em;
+}
+.footer{
+    position:relative;
+    top:2em;
+    left:30%;
+    width:50%;
+}
